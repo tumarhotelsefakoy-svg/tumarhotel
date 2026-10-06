@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="robots" content="noindex, nofollow, noarchive">
 
 <title>Tumar Hotel Istanbul</title>
@@ -16,38 +17,26 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
-    /* KOYU LACİVERT */
     background: #071525;
-
     color: #f4f1e8;
 }
 
-
-/* =========================
-   HERO
-========================= */
-
 .hero {
-
     min-height: 360px;
 
     background:
         linear-gradient(
             rgba(3,15,29,.38),
-            rgba(3,15,29,.78)
+            rgba(3,15,29,.80)
         ),
-
         url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1600&q=85")
         center/cover;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     text-align: center;
-
     color: white;
 
     padding: 30px 20px;
@@ -55,13 +44,9 @@ body {
     border-bottom: 2px solid #c9a44c;
 }
 
-
 .hero h1 {
-
     font-size: 44px;
-
     letter-spacing: 6px;
-
     margin: 0 0 12px;
 
     color: #d4b35c;
@@ -70,54 +55,32 @@ body {
         0 2px 12px rgba(0,0,0,.7);
 }
 
-
 .hero p {
-
     font-size: 17px;
-
     margin: 0;
-
     color: #ffffff;
 }
 
-
-/* =========================
-   CONTAINER
-========================= */
-
 .container {
-
     max-width: 720px;
-
     margin: auto;
-
     padding: 25px 18px 50px;
 }
 
-
-/* =========================
-   LANGUAGE
-========================= */
+/* DİL BUTONLARI */
 
 .language {
-
     display: grid;
-
-    grid-template-columns:
-    repeat(4, 1fr);
-
+    grid-template-columns: repeat(4, 1fr);
     gap: 8px;
 
     margin-bottom: 24px;
 }
 
-
 .language button {
-
     border: 1px solid #9f8135;
 
     background: #0b1c30;
-
     color: #d7bd72;
 
     padding: 11px 5px;
@@ -131,27 +94,19 @@ body {
     transition: .2s;
 }
 
-
 .language button:hover,
 .language button.active {
-
     background: #c9a44c;
 
     color: #071525;
 
     border-color: #e0c56f;
-
 }
 
-
-/* =========================
-   CARDS
-========================= */
+/* KARTLAR */
 
 .card {
-
     background:
-
         linear-gradient(
             145deg,
             #0b1d32,
@@ -170,9 +125,7 @@ body {
         0 7px 25px rgba(0,0,0,.28);
 }
 
-
 .card h2 {
-
     margin-top: 0;
 
     font-size: 20px;
@@ -185,17 +138,17 @@ body {
         1px solid rgba(201,164,76,.35);
 }
 
+.card p {
+    color: #c7ced6;
+    line-height: 1.7;
+}
 
-/* =========================
-   INFO
-========================= */
+/* BİLGİ SATIRLARI */
 
 .info {
-
     display: flex;
 
     justify-content: space-between;
-
     align-items: center;
 
     gap: 15px;
@@ -206,33 +159,23 @@ body {
         1px solid rgba(255,255,255,.08);
 }
 
-
 .info:last-child {
-
     border-bottom: none;
 }
 
-
 .info span {
-
     color: #c7ced6;
 }
 
-
 .info strong {
-
     color: #e1c66e;
 
     text-align: right;
 }
 
-
-/* =========================
-   BUTTON
-========================= */
+/* BUTON */
 
 .button {
-
     display: block;
 
     text-align: center;
@@ -254,34 +197,21 @@ body {
     transition: .2s;
 }
 
-
 .button:hover {
-
     background: #e0c56f;
-
 }
-
 
 .whatsapp {
-
     background: #b9973e;
-
 }
-
 
 .whatsapp:hover {
-
     background: #d2b65c;
-
 }
 
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
-
     text-align: center;
 
     color: #7f8b99;
@@ -291,61 +221,41 @@ footer {
     margin-top: 32px;
 
     line-height: 1.7;
-
 }
 
-
 footer span {
-
     color: #b9a76c;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
+/* MOBİL */
 
 @media(max-width:480px) {
 
     .hero {
-
         min-height: 300px;
     }
 
-
     .hero h1 {
-
         font-size: 35px;
-
         letter-spacing: 5px;
     }
 
-
     .language {
-
-        grid-template-columns:
-        repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
-
     .card {
-
         padding: 19px;
     }
 
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -362,13 +272,10 @@ footer span {
 </section>
 
 
-
 <div class="container">
 
 
-<!-- =========================
-     LANGUAGES
-========================= -->
+<!-- DİLLER -->
 
 <div class="language">
 
@@ -407,10 +314,7 @@ footer span {
 </div>
 
 
-
-<!-- =========================
-     WELCOME
-========================= -->
+<!-- HOŞ GELDİNİZ -->
 
 <div class="card">
 
@@ -419,29 +323,21 @@ footer span {
     </h2>
 
     <p id="welcomeText">
-
-        Tumar Hotel Istanbul'u tercih ettiğiniz için
-        teşekkür ederiz.
-
-        Konaklamanız boyunca ihtiyaç duyabileceğiniz
-        bilgilere aşağıdan ulaşabilirsiniz.
-
+        Tumar Hotel Istanbul'u tercih ettiğiniz için teşekkür ederiz.
+        Konaklamanız boyunca ihtiyaç duyabileceğiniz bilgilere
+        aşağıdan ulaşabilirsiniz.
     </p>
 
 </div>
 
 
-
-<!-- =========================
-     BREAKFAST
-========================= -->
+<!-- KAHVALTI -->
 
 <div class="card">
 
     <h2 id="breakfastTitle">
         🍳 Kahvaltı
     </h2>
-
 
     <div class="info">
 
@@ -454,7 +350,6 @@ footer span {
         </strong>
 
     </div>
-
 
     <div class="info">
 
@@ -471,17 +366,13 @@ footer span {
 </div>
 
 
-
-<!-- =========================
-     RECEPTION
-========================= -->
+<!-- RESEPSİYON -->
 
 <div class="card">
 
     <h2 id="receptionTitle">
         🛎️ Resepsiyon
     </h2>
-
 
     <div class="info">
 
@@ -495,30 +386,24 @@ footer span {
 
     </div>
 
-
     <a
         class="button whatsapp"
         href="https://wa.me/905XXXXXXXXX"
-        target="_blank">
-
+        target="_blank"
+    >
         WhatsApp
-
     </a>
 
 </div>
 
 
-
-<!-- =========================
-     CHECK IN
-========================= -->
+<!-- GİRİŞ / ÇIKIŞ -->
 
 <div class="card">
 
     <h2 id="checkTitle">
         🛏️ Giriş / Çıkış
     </h2>
-
 
     <div class="info">
 
@@ -532,7 +417,6 @@ footer span {
 
     </div>
 
-
     <div class="info">
 
         <span id="checkout">
@@ -545,33 +429,16 @@ footer span {
 
     </div>
 
-
-    <div class="info">
-
-        <span id="late">
-            Geç çıkış
-        </span>
-
-        <strong>
-            16:00
-        </strong>
-
-    </div>
-
 </div>
 
 
-
-<!-- =========================
-     WIFI
-========================= -->
+<!-- WI-FI -->
 
 <div class="card">
 
     <h2 id="wifiTitle">
         📶 Wi-Fi
     </h2>
-
 
     <div class="info">
 
@@ -584,7 +451,6 @@ footer span {
         </strong>
 
     </div>
-
 
     <div class="info">
 
@@ -601,10 +467,13 @@ footer span {
 </div>
 
 
+<!-- FOOTER -->
 
 <footer>
 
-    Tumar Hotel Istanbul<br>
+    Tumar Hotel Istanbul
+
+    <br>
 
     <span id="footerText">
         Keyifli bir konaklama dileriz.
@@ -616,16 +485,12 @@ footer span {
 </div>
 
 
-
 <script>
-
-
-/* =========================
-   TRANSLATIONS
-========================= */
 
 const translations = {
 
+
+/* TÜRKÇE */
 
 tr: {
 
@@ -668,9 +533,6 @@ checkin:
 checkout:
 "Çıkış",
 
-late:
-"Geç çıkış",
-
 wifiTitle:
 "📶 Wi-Fi",
 
@@ -686,6 +548,7 @@ footer:
 },
 
 
+/* İNGİLİZCE */
 
 en: {
 
@@ -728,9 +591,6 @@ checkin:
 checkout:
 "Check-out",
 
-late:
-"Late check-out",
-
 wifiTitle:
 "📶 Wi-Fi",
 
@@ -746,6 +606,7 @@ footer:
 },
 
 
+/* ALMANCA */
 
 de: {
 
@@ -788,9 +649,6 @@ checkin:
 checkout:
 "Check-out",
 
-late:
-"Später Check-out",
-
 wifiTitle:
 "📶 Wi-Fi",
 
@@ -806,6 +664,7 @@ footer:
 },
 
 
+/* İTALYANCA */
 
 it: {
 
@@ -848,9 +707,6 @@ checkin:
 checkout:
 "Check-out",
 
-late:
-"Check-out posticipato",
-
 wifiTitle:
 "📶 Wi-Fi",
 
@@ -866,6 +722,7 @@ footer:
 },
 
 
+/* İSPANYOLCA */
 
 es: {
 
@@ -908,9 +765,6 @@ checkin:
 checkout:
 "Salida",
 
-late:
-"Salida tardía",
-
 wifiTitle:
 "📶 Wi-Fi",
 
@@ -926,6 +780,7 @@ footer:
 },
 
 
+/* RUSÇA */
 
 ru: {
 
@@ -968,9 +823,6 @@ checkin:
 checkout:
 "Выезд",
 
-late:
-"Поздний выезд",
-
 wifiTitle:
 "📶 Wi-Fi",
 
@@ -986,6 +838,7 @@ footer:
 },
 
 
+/* ARAPÇA */
 
 ar: {
 
@@ -1028,9 +881,6 @@ checkin:
 checkout:
 "تسجيل المغادرة",
 
-late:
-"المغادرة المتأخرة",
-
 wifiTitle:
 "📶 Wi-Fi",
 
@@ -1046,6 +896,7 @@ footer:
 },
 
 
+/* ROMENCE */
 
 ro: {
 
@@ -1088,9 +939,6 @@ checkin:
 checkout:
 "Check-out",
 
-late:
-"Check-out târziu",
-
 wifiTitle:
 "📶 Wi-Fi",
 
@@ -1108,15 +956,11 @@ footer:
 };
 
 
-
-/* =========================
-   LANGUAGE CHANGE
-========================= */
+/* DİL DEĞİŞTİRME */
 
 function setLang(lang) {
 
     const t = translations[lang];
-
 
     for (let id in t) {
 
@@ -1125,56 +969,49 @@ function setLang(lang) {
 
         if (element) {
 
-            element.innerText =
-                t[id];
+            element.innerText = t[id];
 
         }
 
     }
 
 
-    /* ARABIC RTL */
+    /* ARAPÇA SAĞDAN SOLA */
 
     if (lang === "ar") {
 
-        document.documentElement.dir =
-            "rtl";
+        document.documentElement.dir = "rtl";
 
-        document.body.style.direction =
-            "rtl";
+        document.body.style.direction = "rtl";
 
-    }
+    } else {
 
-    else {
+        document.documentElement.dir = "ltr";
 
-        document.documentElement.dir =
-            "ltr";
-
-        document.body.style.direction =
-            "ltr";
+        document.body.style.direction = "ltr";
 
     }
 
 
-    /* ACTIVE LANGUAGE */
+    /* AKTİF DİL */
 
     document
-    .querySelectorAll(".language button")
-    .forEach(button => {
+        .querySelectorAll(".language button")
+        .forEach(button => {
 
-        button.classList.remove("active");
+            button.classList.remove("active");
 
-    });
+        });
 
 
     document
-    .getElementById(lang)
-    .classList.add("active");
+        .getElementById(lang)
+        .classList.add("active");
 
 }
 
 
-/* DEFAULT LANGUAGE */
+/* BAŞLANGIÇ DİLİ */
 
 setLang("tr");
 
