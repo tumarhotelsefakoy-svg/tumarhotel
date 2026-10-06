@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+
+<title>Tumar Hotel</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f3ef;
+    color: #202020;
+}
+
+.hero {
+    min-height: 340px;
+    background:
+        linear-gradient(rgba(0,0,0,.48), rgba(0,0,0,.58)),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80")
+        center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px 20px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    letter-spacing: 5px;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin: 0;
+}
+
+.container {
+    max-width: 720px;
+    margin: auto;
+    padding: 25px 18px 50px;
+}
+
+/* DİL SEÇİMİ */
+
+.language {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.language button {
+    border: 1px solid #c5b58a;
+    background: white;
+    color: #333;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: .2s;
+}
+
+.language button:hover,
+.language button.active {
+    background: #17251f;
+    color: white;
+}
+
+/* KARTLAR */
+
+.card {
+    background: white;
+    border-radius: 17px;
+    padding: 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.06);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 11px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info:last-child {
+    border-bottom: none;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #17251f;
+    color: white;
+    padding: 14px;
+    border-radius: 10px;
+    margin-top: 14px;
+}
+
+.whatsapp {
+    background: #198754;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+@media(max-width:480px) {
+
+    .hero {
+        min-height: 290px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .language {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        padding: 19px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div>
+        <h1>TUMAR HOTEL</h1>
+        <p id="welcome">Welcome to Istanbul</p>
+    </div>
+</section>
+
+<div class="container">
+
+    <!-- DİL SEÇİMİ -->
+
+    <div class="language">
+
+        <button onclick="setLang('tr')" id="tr">
+            🇹🇷 Türkçe
+        </button>
+
+        <button onclick="setLang('en')" id="en">
+            🇬🇧 English
+        </button>
+
+        <button onclick="setLang('de')" id="de">
+            🇩🇪 Deutsch
+        </button>
+
+        <button onclick="setLang('it')" id="it">
+            🇮🇹 Italiano
+        </button>
+
+        <button onclick="setLang('es')" id="es">
+            🇪🇸 Español
+        </button>
+
+        <button onclick="setLang('ru')" id="ru">
+            🇷🇺 Русский
+        </button>
+
+        <button onclick="setLang('ar')" id="ar">
+            🇸🇦 العربية
+        </button>
+
+        <button onclick="setLang('ro')" id="ro">
+            🇷🇴 Română
+        </button>
+
+    </div>
+
+    <!-- HOŞ GELDİNİZ -->
+
+    <div class="card">
+
+        <h2 id="welcomeTitle">
+            Hoş Geldiniz
+        </h2>
+
+        <p id="welcomeText">
+            Tumar Hotel Istanbul'u tercih ettiğiniz için teşekkür ederiz.
+            Konaklamanız boyunca ihtiyaç duyabileceğiniz bilgilere
+            aşağıdan ulaşabilirsiniz.
+        </p>
+
+    </div>
+
+    <!-- KAHVALTI -->
+
+    <div class="card">
+
+        <h2 id="breakfastTitle">
+            🍳 Kahvaltı
+        </h2>
+
+        <div class="info">
+            <span id="breakfastPlace">
+                Kahvaltı
+            </span>
+
+            <strong>
+                -1. Kat
+            </strong>
+        </div>
+
+        <div class="info">
+            <span id="breakfastTime">
+                Saat
+            </span>
+
+            <strong>
+                07:30 – 10:30
+            </strong>
+        </div>
+
+    </div>
+
+    <!-- RESEPSİYON -->
+
+    <div class="card">
+
+        <h2 id="receptionTitle">
+            🛎️ Resepsiyon
+        </h2>
+
+        <div class="info">
+
+            <span id="receptionTime">
+                Resepsiyon
+            </span>
+
+            <strong>
+                24 Saat
+            </strong>
+
+        </div>
+
+        <a
+            class="button whatsapp"
+            href="https://wa.me/905XXXXXXXXX"
+            target="_blank"
+            id="whatsapp">
+            WhatsApp
+        </a>
+
+    </div>
+
+    <!-- CHECK-IN -->
+
+    <div class="card">
+
+        <h2 id="checkTitle">
+            🛏️ Check-in / Check-out
+        </h2>
+
+        <div class="info">
+
+            <span id="checkin">
+                Check-in
+            </span>
+
+            <strong>
+                14:00
+            </strong>
+
+        </div>
+
+        <div class="info">
+
+            <span id="checkout">
+                Check-out
+            </span>
+
+            <strong>
+                12:00
+            </strong>
+
+        </div>
+
+        <div class="info">
+
+            <span id="late">
+                Geç çıkış
+            </span>
+
+            <strong>
+                16:00
+            </strong>
+
+        </div>
+
+    </div>
+
+    <!-- WI-FI -->
+
+    <div class="card">
+
+        <h2 id="wifiTitle">
+            📶 Wi-Fi
+        </h2>
+
+        <div class="info">
+
+            <span id="wifiName">
+                Ağ adı
+            </span>
+
+            <strong>
+                Tumar Hotel
+            </strong>
+
+        </div>
+
+        <div class="info">
+
+            <span id="wifiPassword">
+                Şifre
+            </span>
+
+            <strong>
+                2026
+            </strong>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        Tumar Hotel<br>
+        <span id="footerText">
+            Keyifli bir konaklama dileriz.
+        </span>
+
+    </footer>
+
+</div>
+
+
+<script>
+
+/* DİL SİSTEMİ */
+
+const translations = {
+
+tr: {
+
+welcome: "Welcome to Istanbul",
+
+welcomeTitle: "Hoş Geldiniz",
+
+welcomeText:
+"Tumar Hotel Istanbul'u tercih ettiğiniz için teşekkür ederiz. Konaklamanız boyunca ihtiyaç duyabileceğiniz bilgilere aşağıdan ulaşabilirsiniz.",
+
+breakfastTitle: "🍳 Kahvaltı",
+
+breakfastPlace: "Kahvaltı",
+
+breakfastTime: "Saat",
+
+receptionTitle: "🛎️ Resepsiyon",
+
+receptionTime: "Resepsiyon",
+
+checkTitle: "🛏️ Check-in / Check-out",
+
+checkin: "Check-in",
+
+checkout: "Check-out",
+
+late: "Geç çıkış",
+
+wifiTitle: "📶 Wi-Fi",
+
+wifiName: "Ağ adı",
+
+wifiPassword: "Şifre",
+
+footer: "Keyifli bir konaklama dileriz."
+
+},
+
+en: {
+
+welcome: "Welcome to Istanbul",
+
+welcomeTitle: "Welcome",
+
+welcomeText:
+"Thank you for choosing Tumar Hotel Istanbul. You can find useful information about your stay below.",
+
+breakfastTitle: "🍳 Breakfast",
+
+breakfastPlace: "Breakfast",
+
+breakfastTime: "Time",
+
+receptionTitle: "🛎️ Reception",
+
+receptionTime: "Reception",
+
+checkTitle: "🛏️ Check-in / Check-out",
+
+checkin: "Check-in",
+
+checkout: "Check-out",
+
+late: "Late check-out",
+
+wifiTitle: "📶 Wi-Fi",
+
+wifiName: "Network",
+
+wifiPassword: "Password",
+
+footer: "We wish you a pleasant stay."
+
+},
+
+de: {
+
+welcome: "Willkommen in Istanbul",
+
+welcomeTitle: "Herzlich Willkommen",
+
+welcomeText:
+"Vielen Dank, dass Sie sich für das Tumar Hotel Istanbul entschieden haben. Hier finden Sie wichtige Informationen für Ihren Aufenthalt.",
+
+breakfastTitle: "🍳 Frühstück",
+
+breakfastPlace: "Frühstück",
+
+breakfastTime: "Uhrzeit",
+
+receptionTitle: "🛎️ Rezeption",
+
+receptionTime: "Rezeption",
+
+checkTitle: "🛏️ Check-in / Check-out",
+
+checkin: "Check-in",
+
+checkout: "Check-out",
+
+late: "Später Check-out",
+
+wifiTitle: "📶 Wi-Fi",
+
+wifiName: "Netzwerk",
+
+wifiPassword: "Passwort",
+
+footer: "Wir wünschen Ihnen einen angenehmen Aufenthalt."
+
+},
+
+it: {
+
+welcome: "Benvenuti a Istanbul",
+
+welcomeTitle: "Benvenuti",
+
+welcomeText:
+"Grazie per aver scelto Tumar Hotel Istanbul. Qui potete trovare tutte le informazioni utili per il vostro soggiorno.",
+
+breakfastTitle: "🍳 Colazione",
+
+breakfastPlace: "Colazione",
+
+breakfastTime: "Orario",
+
+receptionTitle: "🛎️ Reception",
+
+receptionTime: "Reception",
+
+checkTitle: "🛏️ Check-in / Check-out",
+
+checkin: "Check-in",
+
+checkout: "Check-out",
+
+late: "Late check-out",
+
+wifiTitle: "📶 Wi-Fi",
+
+wifiName: "Rete",
+
+wifiPassword: "Password",
+
+footer: "Vi auguriamo un piacevole soggiorno."
+
+},
+
+es: {
+
+welcome: "Bienvenidos a Estambul",
+
+welcomeTitle: "Bienvenidos",
+
+welcomeText:
+"Gracias por elegir Tumar Hotel Istanbul. A continuación encontrará información útil para su estancia.",
+
+breakfastTitle: "🍳 Desayuno",
+
+breakfastPlace: "Desayuno",
+
+breakfastTime: "Horario",
+
+receptionTitle: "🛎️ Recepción",
+
+receptionTime: "Recepción",
+
+checkTitle: "🛏️ Check-in / Check-out",
+
+checkin: "Check-in",
+
+checkout: "Check-out",
+
+late: "Salida tardía",
+
+wifiTitle: "📶 Wi-Fi",
+
+wifiName: "Red",
+
+wifiPassword: "Contraseña",
+
+footer: "Le deseamos una agradable estancia."
+
+},
+
+ru: {
+
+welcome: "Добро пожаловать в Стамбул",
+
+welcomeTitle: "Добро пожаловать",
+
+welcomeText:
+"Спасибо, что выбрали Tumar Hotel Istanbul. Ниже вы найдете полезную информацию о вашем пребывании.",
+
+breakfastTitle: "🍳 Завтрак",
+
+breakfastPlace: "Завтрак",
+
+breakfastTime: "Время",
+
+receptionTitle: "🛎️ Ресепшен",
+
+receptionTime: "Ресепшен",
+
+checkTitle: "🛏️ Заезд / Выезд",
+
+checkin: "Заезд",
+
+checkout: "Выезд",
+
+late: "Поздний выезд",
+
+wifiTitle: "📶 Wi-Fi",
+
+wifiName: "Сеть",
+
+wifiPassword: "Пароль",
+
+footer: "Желаем вам приятного пребывания."
+
+},
+
+ar: {
+
+welcome: "مرحباً بكم في إسطنبول",
+
+welcomeTitle: "مرحباً بكم",
+
+welcomeText:
+"شكراً لاختياركم فندق Tumar Hotel Istanbul. يمكنكم العثور أدناه على المعلومات المهمة لإقامتكم.",
+
+breakfastTitle: "🍳 الإفطار",
+
+breakfastPlace: "الإفطار",
+
+breakfastTime: "الوقت",
+
+receptionTitle: "🛎️ الاستقبال",
+
+receptionTime: "الاستقبال",
+
+checkTitle: "🛏️ تسجيل الدخول / المغادرة",
+
+checkin: "تسجيل الدخول",
+
+checkout: "تسجيل المغادرة",
+
+late: "المغادرة المتأخرة",
+
+wifiTitle: "📶 Wi-Fi",
+
+wifiName: "اسم الشبكة",
+
+wifiPassword: "كلمة المرور",
+
+footer: "نتمنى لكم إقامة ممتعة."
+
+},
+
+ro: {
+
+welcome: "Bine ați venit la Istanbul",
+
+welcomeTitle: "Bine ați venit",
+
+welcomeText:
+"Vă mulțumim că ați ales Tumar Hotel Istanbul. Mai jos găsiți informații utile pentru șederea dumneavoastră.",
+
+breakfastTitle: "🍳 Mic dejun",
+
+breakfastPlace: "Mic dejun",
+
+breakfastTime: "Program",
+
+receptionTitle: "🛎️ Recepție",
+
+receptionTime: "Recepție",
+
+checkTitle: "🛏️ Check-in / Check-out",
+
+checkin: "Check-in",
+
+checkout: "Check-out",
+
+late: "Check-out târziu",
+
+wifiTitle: "📶 Wi-Fi",
+
+wifiName: "Rețea",
+
+wifiPassword: "Parolă",
+
+footer: "Vă dorim un sejur plăcut."
+
+}
+
+};
+
+
+/* DİL DEĞİŞTİR */
+
+function setLang(lang) {
+
+const t = translations[lang];
+
+for (let id in t) {
+
+const element = document.getElementById(id);
+
+if (element) {
+element.innerText = t[id];
+}
+
+}
+
+
+/* ARAPÇA SAĞDAN SOLA */
+
+if (lang === "ar") {
+
+document.documentElement.dir = "rtl";
+
+document.body.style.direction = "rtl";
+
+} else {
+
+document.documentElement.dir = "ltr";
+
+document.body.style.direction = "ltr";
+
+}
+
+
+/* AKTİF DİL */
+
+document.querySelectorAll(".language button")
+.forEach(button => {
+button.classList.remove("active");
+});
+
+document.getElementById(lang).classList.add("active");
+
+}
+
+
+/* İLK AÇILIŞ */
+
+setLang("tr");
+
+</script>
+
+</body>
+</html>
