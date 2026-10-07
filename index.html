@@ -1,491 +1,1509 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow, noarchive">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="robots"
+      content="noindex, nofollow, noarchive">
 
 <title>Tumar Hotel Istanbul</title>
 
 <style>
+
+/* =========================
+   GENEL
+========================= */
+
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+    background: #031426;
+    color: #f5f1e7;
     font-family: Arial, Helvetica, sans-serif;
-    background: #071525;
-    color: #f4f1e8;
+    overflow-x: hidden;
 }
+
+
+/* =========================
+   HERO / BOĞAZ
+========================= */
 
 .hero {
-    min-height: 360px;
-    background:
-        linear-gradient(rgba(3,15,29,.38), rgba(3,15,29,.80)),
-        url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1600&q=85")
-        center/cover;
+
+    min-height: 540px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     text-align: center;
-    padding: 30px 20px;
-    border-bottom: 2px solid #c9a44c;
+
+    padding: 70px 20px 55px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(2,15,30,.18),
+            rgba(3,20,38,.45),
+            #031426
+        ),
+        url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1800&q=90")
+        center center / cover no-repeat;
+
+    border-bottom:
+        1px solid #c9a44c;
 }
 
-.hero h1 {
-    font-size: 44px;
-    letter-spacing: 6px;
-    margin: 0 0 12px;
-    color: #d4b35c;
-    text-shadow: 0 2px 12px rgba(0,0,0,.7);
+
+.hero-content {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    position: relative;
+
+    z-index: 2;
 }
 
-.hero p {
-    font-size: 17px;
+
+/* LOGO */
+
+.logo-symbol {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 18px;
+
+    border: 2px solid #d7b85c;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #e2c56a;
+
+    font-size: 30px;
+
+    font-family: Georgia, serif;
+
+}
+
+
+/* HOTEL NAME */
+
+.hotel-name {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(
+        34px,
+        7vw,
+        66px
+    );
+
+    letter-spacing:
+        clamp(4px, 1.2vw, 9px);
+
+    color: #e0bd5a;
+
     margin: 0;
-    color: #fff;
+
+    text-shadow:
+        0 3px 20px rgba(0,0,0,.8);
 }
+
+
+.hotel-city {
+
+    margin-top: 8px;
+
+    color: #f3d77f;
+
+    letter-spacing: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* HOŞ GELDİNİZ */
+
+.welcome-title {
+
+    margin-top: 75px;
+
+    margin-bottom: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(28px, 6vw, 52px);
+
+    color: #ffffff;
+
+    text-shadow:
+        0 3px 15px rgba(0,0,0,.9);
+}
+
+
+.welcome-subtitle {
+
+    color: #e0bd5a;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-style: italic;
+
+    font-size: 20px;
+}
+
+
+/* DEKORATİF ÇİZGİ */
+
+.gold-line {
+
+    width: 180px;
+
+    height: 1px;
+
+    background: #c9a44c;
+
+    margin: 22px auto;
+
+    position: relative;
+}
+
+
+.gold-line::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background: #031426;
+
+    padding: 0 12px;
+
+    color: #e0bd5a;
+}
+
+
+/* =========================
+   ANA ALAN
+========================= */
 
 .container {
-    max-width: 720px;
+
+    width: 100%;
+
+    max-width: 1100px;
+
     margin: auto;
-    padding: 25px 18px 50px;
+
+    padding:
+        30px 20px 60px;
 }
 
-/* DİL BUTONLARI */
 
-.language {
+/* =========================
+   DİL BUTONLARI
+========================= */
+
+.language-grid {
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    margin-bottom: 24px;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 35px;
 }
 
-.language button {
-    border: 1px solid #9f8135;
-    background: #0b1c30;
-    color: #d7bd72;
-    padding: 11px 5px;
-    border-radius: 9px;
+
+.language-btn {
+
+    min-height: 52px;
+
+    border:
+        1px solid #a98535;
+
+    border-radius: 12px;
+
+    background:
+        rgba(5,25,44,.9);
+
+    color: #e0c46c;
+
+    font-size: 14px;
+
     cursor: pointer;
-    font-size: 13px;
-    transition: .2s;
+
+    transition: .25s;
+
+    padding: 10px;
 }
 
-.language button:hover,
-.language button.active {
+
+.language-btn:hover,
+.language-btn.active {
+
     background: #c9a44c;
-    color: #071525;
-    border-color: #e0c56f;
+
+    color: #061525;
+
+    border-color: #e8ca70;
+
+    transform: translateY(-2px);
 }
 
-/* KARTLAR */
+
+/* =========================
+   BİLGİ KARTLARI
+========================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
 
 .card {
-    background: linear-gradient(145deg, #0b1d32, #09182a);
-    border: 1px solid #283c54;
-    border-radius: 16px;
-    padding: 22px;
-    margin-bottom: 16px;
-    box-shadow: 0 7px 25px rgba(0,0,0,.28);
+
+    background:
+        linear-gradient(
+            145deg,
+            #071d34,
+            #041426
+        );
+
+    border:
+        1px solid #7d6534;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.25);
 }
+
 
 .card h2 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #d4b35c;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(201,164,76,.35);
-}
 
-.card p {
-    color: #c7ced6;
-    line-height: 1.7;
-}
+    margin: 0 0 20px;
 
-/* BİLGİLER */
+    color: #e0bd5a;
 
-.info {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
-    gap: 15px;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,.08);
+
+    gap: 12px;
 }
 
-.info:last-child {
+
+.card h2::after {
+
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        rgba(201,164,76,.35);
+}
+
+
+/* =========================
+   BİLGİ SATIRLARI
+========================= */
+
+.info-row {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 15px;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.07);
+}
+
+
+.info-row:last-child {
+
     border-bottom: none;
 }
 
-.info span {
-    color: #c7ced6;
+
+.info-label {
+
+    color: #aeb9c5;
 }
 
-.info strong {
-    color: #e1c66e;
+
+.info-value {
+
+    color: #f0d477;
+
+    font-weight: bold;
+
     text-align: right;
 }
 
-/* BUTON */
 
-.button {
+/* =========================
+   AÇIKLAMA METİNLERİ
+========================= */
+
+.description {
+
+    color: #c5cdd6;
+
+    line-height: 1.75;
+
+    font-size: 14px;
+
+    margin: 0;
+
+    text-align: left;
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp-button {
+
     display: block;
+
+    width: 100%;
+
     text-align: center;
+
     text-decoration: none;
-    background: #c9a44c;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d5b653,
+            #b38c32
+        );
+
     color: #071525;
+
     font-weight: bold;
-    padding: 14px;
-    border-radius: 10px;
-    margin-top: 15px;
+
+    padding: 15px;
+
+    border-radius: 11px;
+
+    margin-top: 18px;
+
+    font-size: 16px;
+
     transition: .2s;
 }
 
-.button:hover {
-    background: #e0c56f;
+
+.whatsapp-button:hover {
+
+    transform: translateY(-2px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8ce79,
+            #c9a44c
+        );
 }
 
-.whatsapp {
-    background: #b9973e;
-}
 
-.whatsapp:hover {
-    background: #d2b65c;
-}
+.whatsapp-note {
 
-/* FOOTER */
+    color: #8998a8;
 
-footer {
     text-align: center;
-    color: #7f8b99;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   UYGULAMALAR
+========================= */
+
+.apps {
+
+    text-align: center;
+
+    color: #d5dbe1;
+
+    line-height: 2;
+
+    font-size: 15px;
+}
+
+
+.apps strong {
+
+    color: #e0bd5a;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    text-align: center;
+
+    margin-top: 45px;
+
+    padding-top: 30px;
+
+    border-top:
+        1px solid
+        rgba(201,164,76,.25);
+
+    color: #8995a3;
+}
+
+
+.footer-symbol {
+
+    color: #e0bd5a;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.footer-main {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 18px;
+
+    color: #f0eadc;
+
+    font-style: italic;
+}
+
+
+.footer-hotel {
+
+    margin-top: 14px;
+
+    color: #d4b35c;
+
+    letter-spacing: 4px;
+
     font-size: 13px;
-    margin-top: 32px;
-    line-height: 1.7;
 }
 
-footer span {
-    color: #b9a76c;
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .cards {
+
+        grid-template-columns: 1fr;
+    }
+
 }
 
-/* MOBİL */
 
-@media(max-width:480px) {
+/* =========================
+   TELEFON
+========================= */
+
+@media (max-width: 600px) {
+
     .hero {
-        min-height: 300px;
+
+        min-height: 470px;
+
+        padding:
+            55px 15px 45px;
+
+        background-position:
+            center center;
     }
 
-    .hero h1 {
-        font-size: 35px;
+
+    .logo-symbol {
+
+        width: 55px;
+
+        height: 55px;
+
+        font-size: 25px;
+    }
+
+
+    .hotel-city {
+
         letter-spacing: 5px;
+
+        font-size: 13px;
     }
 
-    .language {
-        grid-template-columns: repeat(2, 1fr);
+
+    .welcome-title {
+
+        margin-top: 55px;
+
+        font-size: 31px;
     }
+
+
+    .welcome-subtitle {
+
+        font-size: 17px;
+    }
+
+
+    .container {
+
+        padding:
+            22px 14px 45px;
+    }
+
+
+    .language-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 9px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .language-btn {
+
+        min-height: 48px;
+
+        font-size: 13px;
+    }
+
+
+    .cards {
+
+        gap: 14px;
+    }
+
 
     .card {
+
         padding: 19px;
+
+        border-radius: 15px;
     }
+
+
+    .card h2 {
+
+        font-size: 19px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .description {
+
+        font-size: 13.5px;
+
+        line-height: 1.7;
+    }
+
+
+    .info-row {
+
+        font-size: 14px;
+
+        padding: 10px 0;
+    }
+
+
+    .footer-hotel {
+
+        letter-spacing: 2px;
+    }
+
 }
+
+
+/* =========================
+   ÇOK KÜÇÜK TELEFON
+========================= */
+
+@media (max-width: 380px) {
+
+    .hero {
+
+        min-height: 430px;
+    }
+
+
+    .hotel-name {
+
+        font-size: 32px;
+    }
+
+
+    .welcome-title {
+
+        font-size: 28px;
+    }
+
+
+    .language-btn {
+
+        font-size: 12px;
+
+        padding: 8px 3px;
+    }
+
+
+    .card {
+
+        padding: 16px;
+    }
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
-    <div>
-        <h1>TUMAR HOTEL</h1>
-        <p id="welcome">İstanbul'a Hoş Geldiniz</p>
+
+    <div class="hero-content">
+
+        <div class="logo-symbol">
+            TH
+        </div>
+
+        <h1 class="hotel-name">
+            TUMAR HOTEL
+        </h1>
+
+        <div class="hotel-city">
+            ISTANBUL
+        </div>
+
+        <div class="welcome-title"
+             id="welcome">
+            İstanbul'a Hoş Geldiniz
+        </div>
+
+        <div class="welcome-subtitle">
+            Tumar Hotel
+        </div>
+
+        <div class="gold-line"></div>
+
     </div>
+
 </section>
 
-<div class="container">
+
+
+<!-- =========================
+     CONTENT
+========================= -->
+
+<main class="container">
+
 
 <!-- DİLLER -->
 
-<div class="language">
+<div class="language-grid">
 
-    <button onclick="setLang('tr')" id="tr">🇹🇷 Türkçe</button>
-    <button onclick="setLang('en')" id="en">🇬🇧 English</button>
-    <button onclick="setLang('de')" id="de">🇩🇪 Deutsch</button>
-    <button onclick="setLang('it')" id="it">🇮🇹 Italiano</button>
-    <button onclick="setLang('es')" id="es">🇪🇸 Español</button>
-    <button onclick="setLang('ru')" id="ru">🇷🇺 Русский</button>
-    <button onclick="setLang('ar')" id="ar">🇸🇦 العربية</button>
-    <button onclick="setLang('ro')" id="ro">🇷🇴 Română</button>
+    <button class="language-btn active"
+            onclick="setLang('tr')"
+            id="tr">
+        🇹🇷 Türkçe
+    </button>
+
+    <button class="language-btn"
+            onclick="setLang('en')"
+            id="en">
+        🇬🇧 English
+    </button>
+
+    <button class="language-btn"
+            onclick="setLang('de')"
+            id="de">
+        🇩🇪 Deutsch
+    </button>
+
+    <button class="language-btn"
+            onclick="setLang('it')"
+            id="it">
+        🇮🇹 Italiano
+    </button>
+
+    <button class="language-btn"
+            onclick="setLang('es')"
+            id="es">
+        🇪🇸 Español
+    </button>
+
+    <button class="language-btn"
+            onclick="setLang('ru')"
+            id="ru">
+        🇷🇺 Русский
+    </button>
+
+    <button class="language-btn"
+            onclick="setLang('ar')"
+            id="ar">
+        🇸🇦 العربية
+    </button>
+
+    <button class="language-btn"
+            onclick="setLang('ro')"
+            id="ro">
+        🇷🇴 Română
+    </button>
 
 </div>
 
-<!-- HOŞ GELDİNİZ -->
+
+
+<!-- KARTLAR -->
+
+<div class="cards">
+
+
+<!-- WIFI -->
 
 <div class="card">
 
-    <h2 id="welcomeTitle">Hoş Geldiniz</h2>
+    <h2 id="wifiTitle">
+        📶 Wi-Fi Bilgisi
+    </h2>
 
-    <p id="welcomeText">
-        Tumar Hotel Istanbul'u tercih ettiğiniz için teşekkür ederiz.
-        Konaklamanız boyunca ihtiyaç duyabileceğiniz bilgilere
-        aşağıdan ulaşabilirsiniz.
-    </p>
+    <div class="info-row">
+
+        <span class="info-label"
+              id="wifiName">
+            Ağ Adı
+        </span>
+
+        <strong class="info-value">
+            Tumar Hotel
+        </strong>
+
+    </div>
+
+    <div class="info-row">
+
+        <span class="info-label"
+              id="wifiPassword">
+            Şifre
+        </span>
+
+        <strong class="info-value">
+            2026
+        </strong>
+
+    </div>
 
 </div>
 
-<!-- KAHVALTI -->
 
-<div class="card">
-
-    <h2 id="breakfastTitle">🍳 Kahvaltı</h2>
-
-    <div class="info">
-        <span id="breakfastPlace">Kahvaltı</span>
-        <strong id="breakfastFloor">-1. Kat</strong>
-    </div>
-
-    <div class="info">
-        <span id="breakfastTime">Saat</span>
-        <strong>07:30 – 10:30</strong>
-    </div>
-
-</div>
 
 <!-- RESEPSİYON -->
 
 <div class="card">
 
-    <h2 id="receptionTitle">🛎️ Resepsiyon</h2>
+    <h2 id="receptionTitle">
+        🛎️ Resepsiyon
+    </h2>
 
-    <div class="info">
-        <span id="receptionTime">Resepsiyon</span>
-        <strong id="reception24">24 Saat</strong>
+    <div class="info-row">
+
+        <span class="info-label"
+              id="extension">
+            Dahili
+        </span>
+
+        <strong class="info-value">
+            0
+        </strong>
+
     </div>
+
 
     <a
-        class="button whatsapp"
         href="https://wa.me/905053722222"
         target="_blank"
-    >
-        WhatsApp
+        class="whatsapp-button">
+
+        💬 WhatsApp
+
     </a>
 
+
+    <div class="whatsapp-note"
+         id="whatsappNote">
+
+        WhatsApp üzerinden iletişime geçerken
+        lütfen oda numaranızı belirtiniz.
+
+    </div>
+
 </div>
 
-<!-- GİRİŞ / ÇIKIŞ -->
+
+
+<!-- KAHVALTI -->
 
 <div class="card">
 
-    <h2 id="checkTitle">🛏️ Giriş / Çıkış</h2>
+    <h2 id="breakfastTitle">
+        🍳 Kahvaltı
+    </h2>
 
-    <div class="info">
-        <span id="checkin">Giriş</span>
-        <strong>14:00</strong>
-    </div>
+    <p class="description"
+       id="breakfastText">
 
-    <div class="info">
-        <span id="checkout">Çıkış</span>
-        <strong>12:00</strong>
-    </div>
+        Kahvaltı salonumuz -1. kattadır.
+        Asansör ile ulaşılabilir.
+        Kahvaltı saati 07:30 – 10:30'dur.
+
+    </p>
 
 </div>
 
-<!-- WI-FI -->
+
+
+<!-- ÇIKIŞ -->
 
 <div class="card">
 
-    <h2 id="wifiTitle">📶 Wi-Fi</h2>
+    <h2 id="checkoutTitle">
+        🧳 Çıkış Saati
+    </h2>
 
-    <div class="info">
-        <span id="wifiName">Ağ adı</span>
-        <strong>Tumar Hotel</strong>
-    </div>
+    <div class="info-row">
 
-    <div class="info">
-        <span id="wifiPassword">Şifre</span>
-        <strong>2026</strong>
+        <span class="info-label"
+              id="checkoutLabel">
+            Çıkış
+        </span>
+
+        <strong class="info-value">
+            12:00
+        </strong>
+
     </div>
 
 </div>
+
+
+
+<!-- ODA TEMİZLİĞİ -->
+
+<div class="card">
+
+    <h2 id="housekeepingTitle">
+        🧹 Oda Temizliği
+    </h2>
+
+    <p class="description"
+       id="housekeepingText">
+
+        Konforunuz için, lütfen anahtar kart
+        yuvasının yanındaki “Do Not Disturb (DND)”
+        ve “Room Cleaning” düğmelerini kullanınız.
+
+        Oda temizliği hizmeti 11:00 – 17:00
+        saatleri arasındadır.
+
+    </p>
+
+</div>
+
+
+
+<!-- YEMEK -->
+
+<div class="card">
+
+    <h2 id="foodTitle">
+        🍽️ Yemek Siparişi
+    </h2>
+
+    <div class="apps"
+         id="foodText">
+
+        Popüler uygulamalar:
+
+        <br>
+
+        <strong>
+            Yemek Sepeti / Getir Yemek
+        </strong>
+
+    </div>
+
+</div>
+
+
+</div>
+
+
 
 <!-- FOOTER -->
 
-<footer>
-    Tumar Hotel Istanbul
-    <br>
-    <span id="footerText">Keyifli bir konaklama dileriz.</span>
+<footer class="footer">
+
+    <div class="footer-symbol">
+        ✦
+    </div>
+
+    <div class="footer-main"
+         id="footerText">
+
+        İyi konaklamalar dileriz.
+
+    </div>
+
+    <div class="footer-hotel">
+
+        TUMAR HOTEL ISTANBUL
+
+    </div>
+
 </footer>
 
-</div>
+
+</main>
+
+
 
 <script>
+
+/* =========================
+   ÇEVİRİLER
+========================= */
 
 const translations = {
 
 tr: {
-    welcome: "İstanbul'a Hoş Geldiniz",
-    welcomeTitle: "Hoş Geldiniz",
-    welcomeText: "Tumar Hotel Istanbul'u tercih ettiğiniz için teşekkür ederiz. Konaklamanız boyunca ihtiyaç duyabileceğiniz bilgilere aşağıdan ulaşabilirsiniz.",
-    breakfastTitle: "🍳 Kahvaltı",
-    breakfastPlace: "Kahvaltı",
-    breakfastFloor: "-1. Kat",
-    breakfastTime: "Saat",
-    receptionTitle: "🛎️ Resepsiyon",
-    receptionTime: "Resepsiyon",
-    reception24: "24 Saat",
-    checkTitle: "🛏️ Giriş / Çıkış",
-    checkin: "Giriş",
-    checkout: "Çıkış",
-    wifiTitle: "📶 Wi-Fi",
-    wifiName: "Ağ adı",
-    wifiPassword: "Şifre",
-    footer: "Keyifli bir konaklama dileriz."
+
+welcome:
+"İstanbul'a Hoş Geldiniz",
+
+wifiTitle:
+"📶 Wi-Fi Bilgisi",
+
+wifiName:
+"Ağ Adı",
+
+wifiPassword:
+"Şifre",
+
+receptionTitle:
+"🛎️ Resepsiyon",
+
+extension:
+"Dahili",
+
+whatsappNote:
+"WhatsApp üzerinden iletişime geçerken lütfen oda numaranızı belirtiniz.",
+
+breakfastTitle:
+"🍳 Kahvaltı",
+
+breakfastText:
+"Kahvaltı salonumuz -1. kattadır. Asansör ile ulaşılabilir. Kahvaltı saati 07:30 – 10:30'dur.",
+
+checkoutTitle:
+"🧳 Çıkış Saati",
+
+checkoutLabel:
+"Çıkış",
+
+housekeepingTitle:
+"🧹 Oda Temizliği",
+
+housekeepingText:
+"Konforunuz için, lütfen anahtar kart yuvasının yanındaki “Do Not Disturb (DND)” ve “Room Cleaning” düğmelerini kullanınız. Oda temizliği hizmeti 11:00 – 17:00 saatleri arasındadır.",
+
+foodTitle:
+"🍽️ Yemek Siparişi",
+
+foodText:
+"Popüler uygulamalar:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+footer:
+"İyi konaklamalar dileriz."
+
 },
+
 
 en: {
-    welcome: "Welcome to Istanbul",
-    welcomeTitle: "Welcome",
-    welcomeText: "Thank you for choosing Tumar Hotel Istanbul. You can find useful information about your stay below.",
-    breakfastTitle: "🍳 Breakfast",
-    breakfastPlace: "Breakfast",
-    breakfastFloor: "Floor -1",
-    breakfastTime: "Time",
-    receptionTitle: "🛎️ Reception",
-    receptionTime: "Reception",
-    reception24: "24 Hours",
-    checkTitle: "🛏️ Check-in / Check-out",
-    checkin: "Check-in",
-    checkout: "Check-out",
-    wifiTitle: "📶 Wi-Fi",
-    wifiName: "Network",
-    wifiPassword: "Password",
-    footer: "We wish you a pleasant stay."
+
+welcome:
+"Welcome to Istanbul",
+
+wifiTitle:
+"📶 Wi-Fi Information",
+
+wifiName:
+"Network",
+
+wifiPassword:
+"Password",
+
+receptionTitle:
+"🛎️ Reception",
+
+extension:
+"Extension",
+
+whatsappNote:
+"When contacting us via WhatsApp, please mention your room number.",
+
+breakfastTitle:
+"🍳 Breakfast",
+
+breakfastText:
+"Our breakfast room is on the -1st floor. It is accessible by elevator. Breakfast hours are 07:30 – 10:30.",
+
+checkoutTitle:
+"🧳 Check-out Time",
+
+checkoutLabel:
+"Check-out",
+
+housekeepingTitle:
+"🧹 Housekeeping",
+
+housekeepingText:
+"For your comfort, please use the “Do Not Disturb (DND)” and “Room Cleaning” buttons beside the key card holder. Housekeeping is available from 11:00 – 17:00.",
+
+foodTitle:
+"🍽️ Food Delivery",
+
+foodText:
+"Popular apps:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+footer:
+"We wish you a pleasant stay."
+
 },
+
 
 de: {
-    welcome: "Willkommen in Istanbul",
-    welcomeTitle: "Herzlich Willkommen",
-    welcomeText: "Vielen Dank, dass Sie sich für das Tumar Hotel Istanbul entschieden haben. Hier finden Sie wichtige Informationen für Ihren Aufenthalt.",
-    breakfastTitle: "🍳 Frühstück",
-    breakfastPlace: "Frühstück",
-    breakfastFloor: "Untergeschoss 1",
-    breakfastTime: "Uhrzeit",
-    receptionTitle: "🛎️ Rezeption",
-    receptionTime: "Rezeption",
-    reception24: "24 Stunden",
-    checkTitle: "🛏️ Check-in / Check-out",
-    checkin: "Check-in",
-    checkout: "Check-out",
-    wifiTitle: "📶 Wi-Fi",
-    wifiName: "Netzwerk",
-    wifiPassword: "Passwort",
-    footer: "Wir wünschen Ihnen einen angenehmen Aufenthalt."
+
+welcome:
+"Willkommen in Istanbul",
+
+wifiTitle:
+"📶 WLAN-Information",
+
+wifiName:
+"Netzwerk",
+
+wifiPassword:
+"Passwort",
+
+receptionTitle:
+"🛎️ Rezeption",
+
+extension:
+"Durchwahl",
+
+whatsappNote:
+"Wenn Sie uns über WhatsApp kontaktieren, geben Sie bitte Ihre Zimmernummer an.",
+
+breakfastTitle:
+"🍳 Frühstück",
+
+breakfastText:
+"Unser Frühstücksraum befindet sich im -1. Stock. Er ist mit dem Aufzug erreichbar. Frühstückszeit: 07:30 – 10:30.",
+
+checkoutTitle:
+"🧳 Check-out-Zeit",
+
+checkoutLabel:
+"Check-out",
+
+housekeepingTitle:
+"🧹 Zimmerreinigung",
+
+housekeepingText:
+"Für Ihren Komfort nutzen Sie bitte die Tasten „Do Not Disturb (DND)“ und „Room Cleaning“ neben dem Schlüsselkartenhalter. Die Zimmerreinigung ist von 11:00 – 17:00 verfügbar.",
+
+foodTitle:
+"🍽️ Essenslieferung",
+
+foodText:
+"Beliebte Apps:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+footer:
+"Wir wünschen Ihnen einen angenehmen Aufenthalt."
+
 },
+
 
 it: {
-    welcome: "Benvenuti a Istanbul",
-    welcomeTitle: "Benvenuti",
-    welcomeText: "Grazie per aver scelto Tumar Hotel Istanbul. Qui potete trovare tutte le informazioni utili per il vostro soggiorno.",
-    breakfastTitle: "🍳 Colazione",
-    breakfastPlace: "Colazione",
-    breakfastFloor: "Piano -1",
-    breakfastTime: "Orario",
-    receptionTitle: "🛎️ Reception",
-    receptionTime: "Reception",
-    reception24: "24 ore",
-    checkTitle: "🛏️ Check-in / Check-out",
-    checkin: "Check-in",
-    checkout: "Check-out",
-    wifiTitle: "📶 Wi-Fi",
-    wifiName: "Rete",
-    wifiPassword: "Password",
-    footer: "Vi auguriamo un piacevole soggiorno."
+
+welcome:
+"Benvenuti a Istanbul",
+
+wifiTitle:
+"📶 Informazioni Wi-Fi",
+
+wifiName:
+"Rete",
+
+wifiPassword:
+"Password",
+
+receptionTitle:
+"🛎️ Reception",
+
+extension:
+"Interno",
+
+whatsappNote:
+"Quando ci contattate tramite WhatsApp, indicate per favore il numero della vostra camera.",
+
+breakfastTitle:
+"🍳 Colazione",
+
+breakfastText:
+"La nostra sala colazione si trova al piano -1. È raggiungibile con l'ascensore. La colazione è servita dalle 07:30 alle 10:30.",
+
+checkoutTitle:
+"🧳 Orario di Check-out",
+
+checkoutLabel:
+"Check-out",
+
+housekeepingTitle:
+"🧹 Pulizia della Camera",
+
+housekeepingText:
+"Per il vostro comfort, utilizzate i pulsanti “Do Not Disturb (DND)” e “Room Cleaning” accanto al porta tessera. Il servizio di pulizia è disponibile dalle 11:00 alle 17:00.",
+
+foodTitle:
+"🍽️ Consegna di Cibo",
+
+foodText:
+"App popolari:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+footer:
+"Vi auguriamo un piacevole soggiorno."
+
 },
+
 
 es: {
-    welcome: "Bienvenidos a Estambul",
-    welcomeTitle: "Bienvenidos",
-    welcomeText: "Gracias por elegir Tumar Hotel Istanbul. A continuación encontrará información útil para su estancia.",
-    breakfastTitle: "🍳 Desayuno",
-    breakfastPlace: "Desayuno",
-    breakfastFloor: "Planta -1",
-    breakfastTime: "Horario",
-    receptionTitle: "🛎️ Recepción",
-    receptionTime: "Recepción",
-    reception24: "24 horas",
-    checkTitle: "🛏️ Entrada / Salida",
-    checkin: "Entrada",
-    checkout: "Salida",
-    wifiTitle: "📶 Wi-Fi",
-    wifiName: "Red",
-    wifiPassword: "Contraseña",
-    footer: "Le deseamos una agradable estancia."
+
+welcome:
+"Bienvenidos a Estambul",
+
+wifiTitle:
+"📶 Información Wi-Fi",
+
+wifiName:
+"Red",
+
+wifiPassword:
+"Contraseña",
+
+receptionTitle:
+"🛎️ Recepción",
+
+extension:
+"Extensión",
+
+whatsappNote:
+"Al contactar con nosotros por WhatsApp, indique por favor su número de habitación.",
+
+breakfastTitle:
+"🍳 Desayuno",
+
+breakfastText:
+"Nuestra sala de desayunos está en la planta -1. Se puede acceder en ascensor. El desayuno se sirve de 07:30 a 10:30.",
+
+checkoutTitle:
+"🧳 Hora de Salida",
+
+checkoutLabel:
+"Salida",
+
+housekeepingTitle:
+"🧹 Limpieza de la Habitación",
+
+housekeepingText:
+"Para su comodidad, utilice los botones “Do Not Disturb (DND)” y “Room Cleaning” situados junto al soporte de la tarjeta. El servicio de limpieza está disponible de 11:00 a 17:00.",
+
+foodTitle:
+"🍽️ Entrega de Comida",
+
+foodText:
+"Aplicaciones populares:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+footer:
+"Le deseamos una agradable estancia."
+
 },
+
 
 ru: {
-    welcome: "Добро пожаловать в Стамбул",
-    welcomeTitle: "Добро пожаловать",
-    welcomeText: "Спасибо, что выбрали Tumar Hotel Istanbul. Ниже вы найдете полезную информацию о вашем пребывании.",
-    breakfastTitle: "🍳 Завтрак",
-    breakfastPlace: "Завтрак",
-    breakfastFloor: "Этаж -1",
-    breakfastTime: "Время",
-    receptionTitle: "🛎️ Ресепшен",
-    receptionTime: "Ресепшен",
-    reception24: "Круглосуточно",
-    checkTitle: "🛏️ Заезд / Выезд",
-    checkin: "Заезд",
-    checkout: "Выезд",
-    wifiTitle: "📶 Wi-Fi",
-    wifiName: "Сеть",
-    wifiPassword: "Пароль",
-    footer: "Желаем вам приятного пребывания."
+
+welcome:
+"Добро пожаловать в Стамбул",
+
+wifiTitle:
+"📶 Информация о Wi-Fi",
+
+wifiName:
+"Сеть",
+
+wifiPassword:
+"Пароль",
+
+receptionTitle:
+"🛎️ Ресепшен",
+
+extension:
+"Внутренний номер",
+
+whatsappNote:
+"При обращении к нам через WhatsApp, пожалуйста, укажите номер вашей комнаты.",
+
+breakfastTitle:
+"🍳 Завтрак",
+
+breakfastText:
+"Наш зал для завтрака находится на -1 этаже. Доступ осуществляется на лифте. Время завтрака: 07:30 – 10:30.",
+
+checkoutTitle:
+"🧳 Время Выезда",
+
+checkoutLabel:
+"Выезд",
+
+housekeepingTitle:
+"🧹 Уборка Номера",
+
+housekeepingText:
+"Для вашего комфорта используйте кнопки «Не беспокоить (DND)» и «Уборка номера» рядом с держателем ключ-карты. Уборка номеров производится с 11:00 до 17:00.",
+
+foodTitle:
+"🍽️ Доставка Еды",
+
+foodText:
+"Популярные приложения:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+footer:
+"Желаем вам приятного пребывания."
+
 },
+
 
 ar: {
-    welcome: "مرحباً بكم في إسطنبول",
-    welcomeTitle: "مرحباً بكم",
-    welcomeText: "شكراً لاختياركم فندق Tumar Hotel Istanbul. يمكنكم العثور أدناه على المعلومات المهمة لإقامتكم.",
-    breakfastTitle: "🍳 الإفطار",
-    breakfastPlace: "الإفطار",
-    breakfastFloor: "الطابق -1",
-    breakfastTime: "الوقت",
-    receptionTitle: "🛎️ الاستقبال",
-    receptionTime: "الاستقبال",
-    reception24: "على مدار 24 ساعة",
-    checkTitle: "🛏️ تسجيل الوصول / المغادرة",
-    checkin: "تسجيل الوصول",
-    checkout: "تسجيل المغادرة",
-    wifiTitle: "📶 Wi-Fi",
-    wifiName: "اسم الشبكة",
-    wifiPassword: "كلمة المرور",
-    footer: "نتمنى لكم إقامة ممتعة."
+
+welcome:
+"مرحباً بكم في إسطنبول",
+
+wifiTitle:
+"📶 معلومات Wi-Fi",
+
+wifiName:
+"اسم الشبكة",
+
+wifiPassword:
+"كلمة المرور",
+
+receptionTitle:
+"🛎️ الاستقبال",
+
+extension:
+"الرقم الداخلي",
+
+whatsappNote:
+"عند التواصل معنا عبر WhatsApp، يرجى ذكر رقم الغرفة.",
+
+breakfastTitle:
+"🍳 الإفطار",
+
+breakfastText:
+"تقع صالة الإفطار في الطابق -1. يمكن الوصول إليها باستخدام المصعد. وقت الإفطار من 07:30 إلى 10:30.",
+
+checkoutTitle:
+"🧳 وقت المغادرة",
+
+checkoutLabel:
+"المغادرة",
+
+housekeepingTitle:
+"🧹 تنظيف الغرفة",
+
+housekeepingText:
+"لراحتكم، يرجى استخدام أزرار «عدم الإزعاج (DND)» و«تنظيف الغرفة» الموجودة بجانب حامل بطاقة المفتاح. خدمة تنظيف الغرف متاحة من الساعة 11:00 إلى 17:00.",
+
+foodTitle:
+"🍽️ توصيل الطعام",
+
+foodText:
+"التطبيقات الشائعة:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+footer:
+"نتمنى لكم إقامة ممتعة."
+
 },
 
+
 ro: {
-    welcome: "Bine ați venit la Istanbul",
-    welcomeTitle: "Bine ați venit",
-    welcomeText: "Vă mulțumim că ați ales Tumar Hotel Istanbul. Mai jos găsiți informații utile pentru șederea dumneavoastră.",
-    breakfastTitle: "🍳 Mic dejun",
-    breakfastPlace: "Mic dejun",
-    breakfastFloor: "Etajul -1",
-    breakfastTime: "Program",
-    receptionTitle: "🛎️ Recepție",
-    receptionTime: "Recepție",
-    reception24: "24 de ore",
-    checkTitle: "🛏️ Check-in / Check-out",
-    checkin: "Check-in",
-    checkout: "Check-out",
-    wifiTitle: "📶 Wi-Fi",
-    wifiName: "Rețea",
-    wifiPassword: "Parolă",
-    footer: "Vă dorim un sejur plăcut."
+
+welcome:
+"Bine ați venit la Istanbul",
+
+wifiTitle:
+"📶 Informații Wi-Fi",
+
+wifiName:
+"Rețea",
+
+wifiPassword:
+"Parolă",
+
+receptionTitle:
+"🛎️ Recepție",
+
+extension:
+"Interior",
+
+whatsappNote:
+"Când ne contactați prin WhatsApp, vă rugăm să menționați numărul camerei.",
+
+breakfastTitle:
+"🍳 Mic dejun",
+
+breakfastText:
+"Sala noastră de mic dejun se află la etajul -1. Se poate ajunge cu liftul. Micul dejun este disponibil între 07:30 și 10:30.",
+
+checkoutTitle:
+"🧳 Ora Check-out",
+
+checkoutLabel:
+"Check-out",
+
+housekeepingTitle:
+"🧹 Curățenia Camerei",
+
+housekeepingText:
+"Pentru confortul dumneavoastră, vă rugăm să folosiți butoanele „Do Not Disturb (DND)” și „Room Cleaning” de lângă suportul cardului de acces. Curățenia camerelor este disponibilă între 11:00 și 17:00.",
+
+foodTitle:
+"🍽️ Livrare de Mâncare",
+
+foodText:
+"Aplicații populare:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+footer:
+"Vă dorim un sejur plăcut."
+
 }
 
 };
 
+
+/* =========================
+   DİL DEĞİŞTİR
+========================= */
 
 function setLang(lang) {
 
@@ -493,31 +1511,68 @@ function setLang(lang) {
 
     for (let id in t) {
 
-        const element = document.getElementById(id);
+        const element =
+            document.getElementById(id);
 
-        if (element) {
-            element.innerText = t[id];
+        if (!element) continue;
+
+
+        /*
+         * Yemek kısmında <br> ve <strong>
+         * bulunduğu için innerHTML kullanıyoruz.
+         */
+
+        if (
+            id === "foodText"
+        ) {
+
+            element.innerHTML =
+                t[id];
+
+        } else {
+
+            element.innerText =
+                t[id];
+
         }
 
     }
 
+
+    /* ARAPÇA RTL */
+
     if (lang === "ar") {
 
-        document.documentElement.dir = "rtl";
-        document.body.style.direction = "rtl";
+        document.documentElement.dir =
+            "rtl";
+
+        document.body.style.direction =
+            "rtl";
 
     } else {
 
-        document.documentElement.dir = "ltr";
-        document.body.style.direction = "ltr";
+        document.documentElement.dir =
+            "ltr";
 
+        document.body.style.direction =
+            "ltr";
     }
 
+
+    /* AKTİF BUTON */
+
     document
-        .querySelectorAll(".language button")
+        .querySelectorAll(
+            ".language-btn"
+        )
         .forEach(button => {
-            button.classList.remove("active");
+
+            button.classList.remove(
+                "active"
+            );
+
         });
+
 
     document
         .getElementById(lang)
@@ -525,7 +1580,7 @@ function setLang(lang) {
 }
 
 
-/* BAŞLANGIÇ DİLİ */
+/* BAŞLANGIÇ */
 
 setLang("tr");
 
