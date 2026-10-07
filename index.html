@@ -15,9 +15,9 @@
 
 <style>
 
-/* =========================
+/* =========================================================
    GENEL
-========================= */
+========================================================= */
 
 * {
     box-sizing: border-box;
@@ -36,9 +36,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    HERO / BOĞAZ
-========================= */
+========================================================= */
 
 .hero {
 
@@ -85,46 +85,19 @@ body {
 }
 
 
-/* LOGO */
-
-.logo-symbol {
-
-    width: 65px;
-
-    height: 65px;
-
-    margin: 0 auto 18px;
-
-    border: 2px solid #d7b85c;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: #e2c56a;
-
-    font-size: 30px;
-
-    font-family: Georgia, serif;
-
-}
-
-
-/* HOTEL NAME */
+/* =========================================================
+   HOTEL NAME
+========================================================= */
 
 .hotel-name {
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-    font-size: clamp(
-        34px,
-        7vw,
-        66px
-    );
+    font-size:
+        clamp(34px, 7vw, 66px);
 
     letter-spacing:
         clamp(4px, 1.2vw, 9px);
@@ -152,11 +125,13 @@ body {
 }
 
 
-/* HOŞ GELDİNİZ */
+/* =========================================================
+   HOŞ GELDİNİZ
+========================================================= */
 
 .welcome-title {
 
-    margin-top: 75px;
+    margin-top: 85px;
 
     margin-bottom: 5px;
 
@@ -189,7 +164,9 @@ body {
 }
 
 
-/* DEKORATİF ÇİZGİ */
+/* =========================================================
+   DEKORATİF ÇİZGİ
+========================================================= */
 
 .gold-line {
 
@@ -226,9 +203,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    ANA ALAN
-========================= */
+========================================================= */
 
 .container {
 
@@ -243,9 +220,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    DİL BUTONLARI
-========================= */
+========================================================= */
 
 .language-grid {
 
@@ -297,9 +274,9 @@ body {
 }
 
 
-/* =========================
-   BİLGİ KARTLARI
-========================= */
+/* =========================================================
+   KARTLAR
+========================================================= */
 
 .cards {
 
@@ -368,9 +345,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    BİLGİ SATIRLARI
-========================= */
+========================================================= */
 
 .info-row {
 
@@ -411,9 +388,9 @@ body {
 }
 
 
-/* =========================
-   AÇIKLAMA METİNLERİ
-========================= */
+/* =========================================================
+   AÇIKLAMA
+========================================================= */
 
 .description {
 
@@ -429,9 +406,34 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
+   SAFE BOX
+========================================================= */
+
+.safe-box {
+
+    border-color: #a98535;
+
+    background:
+        linear-gradient(
+            145deg,
+            #09213a,
+            #041426
+        );
+}
+
+
+.safe-highlight {
+
+    color: #f0d477;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
    WHATSAPP
-========================= */
+========================================================= */
 
 .whatsapp-button {
 
@@ -493,9 +495,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    UYGULAMALAR
-========================= */
+========================================================= */
 
 .apps {
 
@@ -515,9 +517,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 .footer {
 
@@ -571,9 +573,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    TABLET
-========================= */
+========================================================= */
 
 @media (max-width: 800px) {
 
@@ -585,9 +587,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    TELEFON
-========================= */
+========================================================= */
 
 @media (max-width: 600px) {
 
@@ -603,13 +605,9 @@ body {
     }
 
 
-    .logo-symbol {
+    .hotel-name {
 
-        width: 55px;
-
-        height: 55px;
-
-        font-size: 25px;
+        font-size: 36px;
     }
 
 
@@ -623,7 +621,7 @@ body {
 
     .welcome-title {
 
-        margin-top: 55px;
+        margin-top: 65px;
 
         font-size: 31px;
     }
@@ -707,9 +705,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    ÇOK KÜÇÜK TELEFON
-========================= */
+========================================================= */
 
 @media (max-width: 380px) {
 
@@ -754,17 +752,13 @@ body {
 <body>
 
 
-<!-- =========================
+<!-- =========================================================
      HERO
-========================= -->
+========================================================= -->
 
 <section class="hero">
 
     <div class="hero-content">
-
-        <div class="logo-symbol">
-            TH
-        </div>
 
         <h1 class="hotel-name">
             TUMAR HOTEL
@@ -774,9 +768,12 @@ body {
             ISTANBUL
         </div>
 
-        <div class="welcome-title"
-             id="welcome">
+        <div
+            class="welcome-title"
+            id="welcome">
+
             İstanbul'a Hoş Geldiniz
+
         </div>
 
         <div class="welcome-subtitle">
@@ -791,75 +788,112 @@ body {
 
 
 
-<!-- =========================
+<!-- =========================================================
      CONTENT
-========================= -->
+========================================================= -->
 
 <main class="container">
 
 
-<!-- DİLLER -->
+<!-- =========================================================
+     DİLLER
+========================================================= -->
 
 <div class="language-grid">
 
-    <button class="language-btn active"
-            onclick="setLang('tr')"
-            id="tr">
+    <button
+        class="language-btn active"
+        onclick="setLang('tr')"
+        id="tr">
+
         🇹🇷 Türkçe
+
     </button>
 
-    <button class="language-btn"
-            onclick="setLang('en')"
-            id="en">
+
+    <button
+        class="language-btn"
+        onclick="setLang('en')"
+        id="en">
+
         🇬🇧 English
+
     </button>
 
-    <button class="language-btn"
-            onclick="setLang('de')"
-            id="de">
+
+    <button
+        class="language-btn"
+        onclick="setLang('de')"
+        id="de">
+
         🇩🇪 Deutsch
+
     </button>
 
-    <button class="language-btn"
-            onclick="setLang('it')"
-            id="it">
+
+    <button
+        class="language-btn"
+        onclick="setLang('it')"
+        id="it">
+
         🇮🇹 Italiano
+
     </button>
 
-    <button class="language-btn"
-            onclick="setLang('es')"
-            id="es">
+
+    <button
+        class="language-btn"
+        onclick="setLang('es')"
+        id="es">
+
         🇪🇸 Español
+
     </button>
 
-    <button class="language-btn"
-            onclick="setLang('ru')"
-            id="ru">
+
+    <button
+        class="language-btn"
+        onclick="setLang('ru')"
+        id="ru">
+
         🇷🇺 Русский
+
     </button>
 
-    <button class="language-btn"
-            onclick="setLang('ar')"
-            id="ar">
+
+    <button
+        class="language-btn"
+        onclick="setLang('ar')"
+        id="ar">
+
         🇸🇦 العربية
+
     </button>
 
-    <button class="language-btn"
-            onclick="setLang('ro')"
-            id="ro">
+
+    <button
+        class="language-btn"
+        onclick="setLang('ro')"
+        id="ro">
+
         🇷🇴 Română
+
     </button>
 
 </div>
 
 
 
-<!-- KARTLAR -->
+<!-- =========================================================
+     KARTLAR
+========================================================= -->
 
 <div class="cards">
 
 
-<!-- WIFI -->
+<!-- =========================================================
+     WIFI
+========================================================= -->
 
 <div class="card">
 
@@ -867,12 +901,17 @@ body {
         📶 Wi-Fi Bilgisi
     </h2>
 
+
     <div class="info-row">
 
-        <span class="info-label"
-              id="wifiName">
+        <span
+            class="info-label"
+            id="wifiName">
+
             Ağ Adı
+
         </span>
+
 
         <strong class="info-value">
             Tumar Hotel
@@ -880,12 +919,17 @@ body {
 
     </div>
 
+
     <div class="info-row">
 
-        <span class="info-label"
-              id="wifiPassword">
+        <span
+            class="info-label"
+            id="wifiPassword">
+
             Şifre
+
         </span>
+
 
         <strong class="info-value">
             2026
@@ -897,7 +941,9 @@ body {
 
 
 
-<!-- RESEPSİYON -->
+<!-- =========================================================
+     RESEPSİYON
+========================================================= -->
 
 <div class="card">
 
@@ -905,12 +951,17 @@ body {
         🛎️ Resepsiyon
     </h2>
 
+
     <div class="info-row">
 
-        <span class="info-label"
-              id="extension">
+        <span
+            class="info-label"
+            id="extension">
+
             Dahili
+
         </span>
+
 
         <strong class="info-value">
             0
@@ -929,8 +980,9 @@ body {
     </a>
 
 
-    <div class="whatsapp-note"
-         id="whatsappNote">
+    <div
+        class="whatsapp-note"
+        id="whatsappNote">
 
         WhatsApp üzerinden iletişime geçerken
         lütfen oda numaranızı belirtiniz.
@@ -941,7 +993,9 @@ body {
 
 
 
-<!-- KAHVALTI -->
+<!-- =========================================================
+     KAHVALTI
+========================================================= -->
 
 <div class="card">
 
@@ -949,8 +1003,10 @@ body {
         🍳 Kahvaltı
     </h2>
 
-    <p class="description"
-       id="breakfastText">
+
+    <p
+        class="description"
+        id="breakfastText">
 
         Kahvaltı salonumuz -1. kattadır.
         Asansör ile ulaşılabilir.
@@ -962,7 +1018,9 @@ body {
 
 
 
-<!-- ÇIKIŞ -->
+<!-- =========================================================
+     ÇIKIŞ
+========================================================= -->
 
 <div class="card">
 
@@ -970,12 +1028,17 @@ body {
         🧳 Çıkış Saati
     </h2>
 
+
     <div class="info-row">
 
-        <span class="info-label"
-              id="checkoutLabel">
+        <span
+            class="info-label"
+            id="checkoutLabel">
+
             Çıkış
+
         </span>
+
 
         <strong class="info-value">
             12:00
@@ -987,7 +1050,9 @@ body {
 
 
 
-<!-- ODA TEMİZLİĞİ -->
+<!-- =========================================================
+     ODA TEMİZLİĞİ
+========================================================= -->
 
 <div class="card">
 
@@ -995,15 +1060,19 @@ body {
         🧹 Oda Temizliği
     </h2>
 
-    <p class="description"
-       id="housekeepingText">
+
+    <p
+        class="description"
+        id="housekeepingText">
 
         Konforunuz için, lütfen anahtar kart
         yuvasının yanındaki “Do Not Disturb (DND)”
         ve “Room Cleaning” düğmelerini kullanınız.
 
-        Oda temizliği hizmeti 11:00 – 17:00
-        saatleri arasındadır.
+        <br><br>
+
+        Oda temizliği hizmeti
+        11:00 – 17:00 saatleri arasındadır.
 
     </p>
 
@@ -1011,7 +1080,41 @@ body {
 
 
 
-<!-- YEMEK -->
+<!-- =========================================================
+     SAFE BOX
+========================================================= -->
+
+<div class="card safe-box">
+
+    <h2 id="safeBoxTitle">
+        🔐 Safe Box
+    </h2>
+
+
+    <p
+        class="description"
+        id="safeBoxText">
+
+        Değerli eşyalarınızı güvenle saklamak
+        için odanızdaki Safe Box'ı kullanabilirsiniz.
+
+        <br><br>
+
+        Safe Box için
+        <span class="safe-highlight">
+            4 haneli kendi şifrenizi
+        </span>
+        oluşturabilirsiniz.
+
+    </p>
+
+</div>
+
+
+
+<!-- =========================================================
+     YEMEK
+========================================================= -->
 
 <div class="card">
 
@@ -1019,8 +1122,10 @@ body {
         🍽️ Yemek Siparişi
     </h2>
 
-    <div class="apps"
-         id="foodText">
+
+    <div
+        class="apps"
+        id="foodText">
 
         Popüler uygulamalar:
 
@@ -1039,7 +1144,9 @@ body {
 
 
 
-<!-- FOOTER -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer class="footer">
 
@@ -1047,17 +1154,18 @@ body {
         ✦
     </div>
 
-    <div class="footer-main"
-         id="footerText">
+
+    <div
+        class="footer-main"
+        id="footerText">
 
         İyi konaklamalar dileriz.
 
     </div>
 
+
     <div class="footer-hotel">
-
         TUMAR HOTEL ISTANBUL
-
     </div>
 
 </footer>
@@ -1069,477 +1177,555 @@ body {
 
 <script>
 
-/* =========================
+/* =========================================================
    ÇEVİRİLER
-========================= */
+========================================================= */
 
 const translations = {
 
+
+/* =========================================================
+   TÜRKÇE
+========================================================= */
+
 tr: {
 
-welcome:
-"İstanbul'a Hoş Geldiniz",
+    welcome:
+    "İstanbul'a Hoş Geldiniz",
 
-wifiTitle:
-"📶 Wi-Fi Bilgisi",
+    wifiTitle:
+    "📶 Wi-Fi Bilgisi",
 
-wifiName:
-"Ağ Adı",
+    wifiName:
+    "Ağ Adı",
 
-wifiPassword:
-"Şifre",
+    wifiPassword:
+    "Şifre",
 
-receptionTitle:
-"🛎️ Resepsiyon",
+    receptionTitle:
+    "🛎️ Resepsiyon",
 
-extension:
-"Dahili",
+    extension:
+    "Dahili",
 
-whatsappNote:
-"WhatsApp üzerinden iletişime geçerken lütfen oda numaranızı belirtiniz.",
+    whatsappNote:
+    "WhatsApp üzerinden iletişime geçerken lütfen oda numaranızı belirtiniz.",
 
-breakfastTitle:
-"🍳 Kahvaltı",
+    breakfastTitle:
+    "🍳 Kahvaltı",
 
-breakfastText:
-"Kahvaltı salonumuz -1. kattadır. Asansör ile ulaşılabilir. Kahvaltı saati 07:30 – 10:30'dur.",
+    breakfastText:
+    "Kahvaltı salonumuz -1. kattadır. Asansör ile ulaşılabilir. Kahvaltı saati 07:30 – 10:30'dur.",
 
-checkoutTitle:
-"🧳 Çıkış Saati",
+    checkoutTitle:
+    "🧳 Çıkış Saati",
 
-checkoutLabel:
-"Çıkış",
+    checkoutLabel:
+    "Çıkış",
 
-housekeepingTitle:
-"🧹 Oda Temizliği",
+    housekeepingTitle:
+    "🧹 Oda Temizliği",
 
-housekeepingText:
-"Konforunuz için, lütfen anahtar kart yuvasının yanındaki “Do Not Disturb (DND)” ve “Room Cleaning” düğmelerini kullanınız. Oda temizliği hizmeti 11:00 – 17:00 saatleri arasındadır.",
+    housekeepingText:
+    "Konforunuz için, lütfen anahtar kart yuvasının yanındaki “Do Not Disturb (DND)” ve “Room Cleaning” düğmelerini kullanınız.<br><br>Oda temizliği hizmeti 11:00 – 17:00 saatleri arasındadır.",
 
-foodTitle:
-"🍽️ Yemek Siparişi",
+    safeBoxTitle:
+    "🔐 Safe Box",
 
-foodText:
-"Popüler uygulamalar:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+    safeBoxText:
+    "Değerli eşyalarınızı güvenle saklamak için odanızdaki Safe Box'ı kullanabilirsiniz.<br><br>Safe Box için <span class='safe-highlight'>4 haneli kendi şifrenizi</span> oluşturabilirsiniz.",
 
-footer:
-"İyi konaklamalar dileriz."
+    foodTitle:
+    "🍽️ Yemek Siparişi",
+
+    foodText:
+    "Popüler uygulamalar:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+    footer:
+    "İyi konaklamalar dileriz."
 
 },
 
+
+/* =========================================================
+   ENGLISH
+========================================================= */
 
 en: {
 
-welcome:
-"Welcome to Istanbul",
+    welcome:
+    "Welcome to Istanbul",
 
-wifiTitle:
-"📶 Wi-Fi Information",
+    wifiTitle:
+    "📶 Wi-Fi Information",
 
-wifiName:
-"Network",
+    wifiName:
+    "Network",
 
-wifiPassword:
-"Password",
+    wifiPassword:
+    "Password",
 
-receptionTitle:
-"🛎️ Reception",
+    receptionTitle:
+    "🛎️ Reception",
 
-extension:
-"Extension",
+    extension:
+    "Extension",
 
-whatsappNote:
-"When contacting us via WhatsApp, please mention your room number.",
+    whatsappNote:
+    "When contacting us via WhatsApp, please mention your room number.",
 
-breakfastTitle:
-"🍳 Breakfast",
+    breakfastTitle:
+    "🍳 Breakfast",
 
-breakfastText:
-"Our breakfast room is on the -1st floor. It is accessible by elevator. Breakfast hours are 07:30 – 10:30.",
+    breakfastText:
+    "Our breakfast room is on the -1st floor. It is accessible by elevator. Breakfast hours are 07:30 – 10:30.",
 
-checkoutTitle:
-"🧳 Check-out Time",
+    checkoutTitle:
+    "🧳 Check-out Time",
 
-checkoutLabel:
-"Check-out",
+    checkoutLabel:
+    "Check-out",
 
-housekeepingTitle:
-"🧹 Housekeeping",
+    housekeepingTitle:
+    "🧹 Housekeeping",
 
-housekeepingText:
-"For your comfort, please use the “Do Not Disturb (DND)” and “Room Cleaning” buttons beside the key card holder. Housekeeping is available from 11:00 – 17:00.",
+    housekeepingText:
+    "For your comfort, please use the “Do Not Disturb (DND)” and “Room Cleaning” buttons beside the key card holder.<br><br>Housekeeping is available from 11:00 – 17:00.",
 
-foodTitle:
-"🍽️ Food Delivery",
+    safeBoxTitle:
+    "🔐 Safe Box",
 
-foodText:
-"Popular apps:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+    safeBoxText:
+    "You can use the Safe Box in your room to securely store your valuables.<br><br>You can create your own <span class='safe-highlight'>4-digit personal code</span> for the Safe Box.",
 
-footer:
-"We wish you a pleasant stay."
+    foodTitle:
+    "🍽️ Food Delivery",
+
+    foodText:
+    "Popular apps:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+    footer:
+    "We wish you a pleasant stay."
 
 },
 
+
+/* =========================================================
+   DEUTSCH
+========================================================= */
 
 de: {
 
-welcome:
-"Willkommen in Istanbul",
+    welcome:
+    "Willkommen in Istanbul",
 
-wifiTitle:
-"📶 WLAN-Information",
+    wifiTitle:
+    "📶 WLAN-Information",
 
-wifiName:
-"Netzwerk",
+    wifiName:
+    "Netzwerk",
 
-wifiPassword:
-"Passwort",
+    wifiPassword:
+    "Passwort",
 
-receptionTitle:
-"🛎️ Rezeption",
+    receptionTitle:
+    "🛎️ Rezeption",
 
-extension:
-"Durchwahl",
+    extension:
+    "Durchwahl",
 
-whatsappNote:
-"Wenn Sie uns über WhatsApp kontaktieren, geben Sie bitte Ihre Zimmernummer an.",
+    whatsappNote:
+    "Wenn Sie uns über WhatsApp kontaktieren, geben Sie bitte Ihre Zimmernummer an.",
 
-breakfastTitle:
-"🍳 Frühstück",
+    breakfastTitle:
+    "🍳 Frühstück",
 
-breakfastText:
-"Unser Frühstücksraum befindet sich im -1. Stock. Er ist mit dem Aufzug erreichbar. Frühstückszeit: 07:30 – 10:30.",
+    breakfastText:
+    "Unser Frühstücksraum befindet sich im -1. Stock. Er ist mit dem Aufzug erreichbar. Frühstückszeit: 07:30 – 10:30.",
 
-checkoutTitle:
-"🧳 Check-out-Zeit",
+    checkoutTitle:
+    "🧳 Check-out-Zeit",
 
-checkoutLabel:
-"Check-out",
+    checkoutLabel:
+    "Check-out",
 
-housekeepingTitle:
-"🧹 Zimmerreinigung",
+    housekeepingTitle:
+    "🧹 Zimmerreinigung",
 
-housekeepingText:
-"Für Ihren Komfort nutzen Sie bitte die Tasten „Do Not Disturb (DND)“ und „Room Cleaning“ neben dem Schlüsselkartenhalter. Die Zimmerreinigung ist von 11:00 – 17:00 verfügbar.",
+    housekeepingText:
+    "Für Ihren Komfort nutzen Sie bitte die Tasten „Do Not Disturb (DND)“ und „Room Cleaning“ neben dem Schlüsselkartenhalter.<br><br>Die Zimmerreinigung ist von 11:00 – 17:00 verfügbar.",
 
-foodTitle:
-"🍽️ Essenslieferung",
+    safeBoxTitle:
+    "🔐 Safe Box",
 
-foodText:
-"Beliebte Apps:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+    safeBoxText:
+    "Sie können den Safe in Ihrem Zimmer verwenden, um Ihre Wertsachen sicher aufzubewahren.<br><br>Für den Safe können Sie Ihren eigenen <span class='safe-highlight'>4-stelligen persönlichen Code</span> erstellen.",
 
-footer:
-"Wir wünschen Ihnen einen angenehmen Aufenthalt."
+    foodTitle:
+    "🍽️ Essenslieferung",
+
+    foodText:
+    "Beliebte Apps:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+    footer:
+    "Wir wünschen Ihnen einen angenehmen Aufenthalt."
 
 },
 
+
+/* =========================================================
+   ITALIANO
+========================================================= */
 
 it: {
 
-welcome:
-"Benvenuti a Istanbul",
+    welcome:
+    "Benvenuti a Istanbul",
 
-wifiTitle:
-"📶 Informazioni Wi-Fi",
+    wifiTitle:
+    "📶 Informazioni Wi-Fi",
 
-wifiName:
-"Rete",
+    wifiName:
+    "Rete",
 
-wifiPassword:
-"Password",
+    wifiPassword:
+    "Password",
 
-receptionTitle:
-"🛎️ Reception",
+    receptionTitle:
+    "🛎️ Reception",
 
-extension:
-"Interno",
+    extension:
+    "Interno",
 
-whatsappNote:
-"Quando ci contattate tramite WhatsApp, indicate per favore il numero della vostra camera.",
+    whatsappNote:
+    "Quando ci contattate tramite WhatsApp, indicate per favore il numero della vostra camera.",
 
-breakfastTitle:
-"🍳 Colazione",
+    breakfastTitle:
+    "🍳 Colazione",
 
-breakfastText:
-"La nostra sala colazione si trova al piano -1. È raggiungibile con l'ascensore. La colazione è servita dalle 07:30 alle 10:30.",
+    breakfastText:
+    "La nostra sala colazione si trova al piano -1. È raggiungibile con l'ascensore. La colazione è servita dalle 07:30 alle 10:30.",
 
-checkoutTitle:
-"🧳 Orario di Check-out",
+    checkoutTitle:
+    "🧳 Orario di Check-out",
 
-checkoutLabel:
-"Check-out",
+    checkoutLabel:
+    "Check-out",
 
-housekeepingTitle:
-"🧹 Pulizia della Camera",
+    housekeepingTitle:
+    "🧹 Pulizia della Camera",
 
-housekeepingText:
-"Per il vostro comfort, utilizzate i pulsanti “Do Not Disturb (DND)” e “Room Cleaning” accanto al porta tessera. Il servizio di pulizia è disponibile dalle 11:00 alle 17:00.",
+    housekeepingText:
+    "Per il vostro comfort, utilizzate i pulsanti “Do Not Disturb (DND)” e “Room Cleaning” accanto al porta tessera.<br><br>Il servizio di pulizia è disponibile dalle 11:00 alle 17:00.",
 
-foodTitle:
-"🍽️ Consegna di Cibo",
+    safeBoxTitle:
+    "🔐 Safe Box",
 
-foodText:
-"App popolari:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+    safeBoxText:
+    "Potete utilizzare la Safe Box presente nella vostra camera per conservare in sicurezza i vostri oggetti di valore.<br><br>Potete creare un vostro <span class='safe-highlight'>codice personale di 4 cifre</span> per la Safe Box.",
 
-footer:
-"Vi auguriamo un piacevole soggiorno."
+    foodTitle:
+    "🍽️ Consegna di Cibo",
+
+    foodText:
+    "App popolari:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+    footer:
+    "Vi auguriamo un piacevole soggiorno."
 
 },
 
+
+/* =========================================================
+   ESPAÑOL
+========================================================= */
 
 es: {
 
-welcome:
-"Bienvenidos a Estambul",
+    welcome:
+    "Bienvenidos a Estambul",
 
-wifiTitle:
-"📶 Información Wi-Fi",
+    wifiTitle:
+    "📶 Información Wi-Fi",
 
-wifiName:
-"Red",
+    wifiName:
+    "Red",
 
-wifiPassword:
-"Contraseña",
+    wifiPassword:
+    "Contraseña",
 
-receptionTitle:
-"🛎️ Recepción",
+    receptionTitle:
+    "🛎️ Recepción",
 
-extension:
-"Extensión",
+    extension:
+    "Extensión",
 
-whatsappNote:
-"Al contactar con nosotros por WhatsApp, indique por favor su número de habitación.",
+    whatsappNote:
+    "Al contactar con nosotros por WhatsApp, indique por favor su número de habitación.",
 
-breakfastTitle:
-"🍳 Desayuno",
+    breakfastTitle:
+    "🍳 Desayuno",
 
-breakfastText:
-"Nuestra sala de desayunos está en la planta -1. Se puede acceder en ascensor. El desayuno se sirve de 07:30 a 10:30.",
+    breakfastText:
+    "Nuestra sala de desayunos está en la planta -1. Se puede acceder en ascensor. El desayuno se sirve de 07:30 a 10:30.",
 
-checkoutTitle:
-"🧳 Hora de Salida",
+    checkoutTitle:
+    "🧳 Hora de Salida",
 
-checkoutLabel:
-"Salida",
+    checkoutLabel:
+    "Salida",
 
-housekeepingTitle:
-"🧹 Limpieza de la Habitación",
+    housekeepingTitle:
+    "🧹 Limpieza de la Habitación",
 
-housekeepingText:
-"Para su comodidad, utilice los botones “Do Not Disturb (DND)” y “Room Cleaning” situados junto al soporte de la tarjeta. El servicio de limpieza está disponible de 11:00 a 17:00.",
+    housekeepingText:
+    "Para su comodidad, utilice los botones “Do Not Disturb (DND)” y “Room Cleaning” situados junto al soporte de la tarjeta.<br><br>El servicio de limpieza está disponible de 11:00 a 17:00.",
 
-foodTitle:
-"🍽️ Entrega de Comida",
+    safeBoxTitle:
+    "🔐 Safe Box",
 
-foodText:
-"Aplicaciones populares:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+    safeBoxText:
+    "Puede utilizar la Safe Box de su habitación para guardar sus objetos de valor de forma segura.<br><br>Puede crear su propio <span class='safe-highlight'>código personal de 4 dígitos</span> para la Safe Box.",
 
-footer:
-"Le deseamos una agradable estancia."
+    foodTitle:
+    "🍽️ Entrega de Comida",
+
+    foodText:
+    "Aplicaciones populares:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+    footer:
+    "Le deseamos una agradable estancia."
 
 },
 
+
+/* =========================================================
+   РУССКИЙ
+========================================================= */
 
 ru: {
 
-welcome:
-"Добро пожаловать в Стамбул",
+    welcome:
+    "Добро пожаловать в Стамбул",
 
-wifiTitle:
-"📶 Информация о Wi-Fi",
+    wifiTitle:
+    "📶 Информация о Wi-Fi",
 
-wifiName:
-"Сеть",
+    wifiName:
+    "Сеть",
 
-wifiPassword:
-"Пароль",
+    wifiPassword:
+    "Пароль",
 
-receptionTitle:
-"🛎️ Ресепшен",
+    receptionTitle:
+    "🛎️ Ресепшен",
 
-extension:
-"Внутренний номер",
+    extension:
+    "Внутренний номер",
 
-whatsappNote:
-"При обращении к нам через WhatsApp, пожалуйста, укажите номер вашей комнаты.",
+    whatsappNote:
+    "При обращении к нам через WhatsApp, пожалуйста, укажите номер вашей комнаты.",
 
-breakfastTitle:
-"🍳 Завтрак",
+    breakfastTitle:
+    "🍳 Завтрак",
 
-breakfastText:
-"Наш зал для завтрака находится на -1 этаже. Доступ осуществляется на лифте. Время завтрака: 07:30 – 10:30.",
+    breakfastText:
+    "Наш зал для завтрака находится на -1 этаже. Доступ осуществляется на лифте. Время завтрака: 07:30 – 10:30.",
 
-checkoutTitle:
-"🧳 Время Выезда",
+    checkoutTitle:
+    "🧳 Время Выезда",
 
-checkoutLabel:
-"Выезд",
+    checkoutLabel:
+    "Выезд",
 
-housekeepingTitle:
-"🧹 Уборка Номера",
+    housekeepingTitle:
+    "🧹 Уборка Номера",
 
-housekeepingText:
-"Для вашего комфорта используйте кнопки «Не беспокоить (DND)» и «Уборка номера» рядом с держателем ключ-карты. Уборка номеров производится с 11:00 до 17:00.",
+    housekeepingText:
+    "Для вашего комфорта используйте кнопки «Не беспокоить (DND)» и «Уборка номера» рядом с держателем ключ-карты.<br><br>Уборка номеров производится с 11:00 до 17:00.",
 
-foodTitle:
-"🍽️ Доставка Еды",
+    safeBoxTitle:
+    "🔐 Сейф",
 
-foodText:
-"Популярные приложения:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+    safeBoxText:
+    "Вы можете использовать сейф в вашем номере для безопасного хранения ценных вещей.<br><br>Для сейфа вы можете создать свой <span class='safe-highlight'>персональный 4-значный код</span>.",
 
-footer:
-"Желаем вам приятного пребывания."
+    foodTitle:
+    "🍽️ Доставка Еды",
+
+    foodText:
+    "Популярные приложения:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+    footer:
+    "Желаем вам приятного пребывания."
 
 },
 
+
+/* =========================================================
+   العربية
+========================================================= */
 
 ar: {
 
-welcome:
-"مرحباً بكم في إسطنبول",
+    welcome:
+    "مرحباً بكم في إسطنبول",
 
-wifiTitle:
-"📶 معلومات Wi-Fi",
+    wifiTitle:
+    "📶 معلومات Wi-Fi",
 
-wifiName:
-"اسم الشبكة",
+    wifiName:
+    "اسم الشبكة",
 
-wifiPassword:
-"كلمة المرور",
+    wifiPassword:
+    "كلمة المرور",
 
-receptionTitle:
-"🛎️ الاستقبال",
+    receptionTitle:
+    "🛎️ الاستقبال",
 
-extension:
-"الرقم الداخلي",
+    extension:
+    "الرقم الداخلي",
 
-whatsappNote:
-"عند التواصل معنا عبر WhatsApp، يرجى ذكر رقم الغرفة.",
+    whatsappNote:
+    "عند التواصل معنا عبر WhatsApp، يرجى ذكر رقم الغرفة.",
 
-breakfastTitle:
-"🍳 الإفطار",
+    breakfastTitle:
+    "🍳 الإفطار",
 
-breakfastText:
-"تقع صالة الإفطار في الطابق -1. يمكن الوصول إليها باستخدام المصعد. وقت الإفطار من 07:30 إلى 10:30.",
+    breakfastText:
+    "تقع صالة الإفطار في الطابق -1. يمكن الوصول إليها باستخدام المصعد. وقت الإفطار من 07:30 إلى 10:30.",
 
-checkoutTitle:
-"🧳 وقت المغادرة",
+    checkoutTitle:
+    "🧳 وقت المغادرة",
 
-checkoutLabel:
-"المغادرة",
+    checkoutLabel:
+    "المغادرة",
 
-housekeepingTitle:
-"🧹 تنظيف الغرفة",
+    housekeepingTitle:
+    "🧹 تنظيف الغرفة",
 
-housekeepingText:
-"لراحتكم، يرجى استخدام أزرار «عدم الإزعاج (DND)» و«تنظيف الغرفة» الموجودة بجانب حامل بطاقة المفتاح. خدمة تنظيف الغرف متاحة من الساعة 11:00 إلى 17:00.",
+    housekeepingText:
+    "لراحتكم، يرجى استخدام أزرار «عدم الإزعاج (DND)» و«تنظيف الغرفة» الموجودة بجانب حامل بطاقة المفتاح.<br><br>خدمة تنظيف الغرف متاحة من الساعة 11:00 إلى 17:00.",
 
-foodTitle:
-"🍽️ توصيل الطعام",
+    safeBoxTitle:
+    "🔐 الخزنة",
 
-foodText:
-"التطبيقات الشائعة:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+    safeBoxText:
+    "يمكنكم استخدام الخزنة الموجودة في غرفتكم لحفظ مقتنياتكم الثمينة بأمان.<br><br>يمكنكم إنشاء <span class='safe-highlight'>رمز شخصي مكون من 4 أرقام</span> للخزنة.",
 
-footer:
-"نتمنى لكم إقامة ممتعة."
+    foodTitle:
+    "🍽️ توصيل الطعام",
+
+    foodText:
+    "التطبيقات الشائعة:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+    footer:
+    "نتمنى لكم إقامة ممتعة."
 
 },
 
 
+/* =========================================================
+   ROMÂNĂ
+========================================================= */
+
 ro: {
 
-welcome:
-"Bine ați venit la Istanbul",
+    welcome:
+    "Bine ați venit la Istanbul",
 
-wifiTitle:
-"📶 Informații Wi-Fi",
+    wifiTitle:
+    "📶 Informații Wi-Fi",
 
-wifiName:
-"Rețea",
+    wifiName:
+    "Rețea",
 
-wifiPassword:
-"Parolă",
+    wifiPassword:
+    "Parolă",
 
-receptionTitle:
-"🛎️ Recepție",
+    receptionTitle:
+    "🛎️ Recepție",
 
-extension:
-"Interior",
+    extension:
+    "Interior",
 
-whatsappNote:
-"Când ne contactați prin WhatsApp, vă rugăm să menționați numărul camerei.",
+    whatsappNote:
+    "Când ne contactați prin WhatsApp, vă rugăm să menționați numărul camerei.",
 
-breakfastTitle:
-"🍳 Mic dejun",
+    breakfastTitle:
+    "🍳 Mic dejun",
 
-breakfastText:
-"Sala noastră de mic dejun se află la etajul -1. Se poate ajunge cu liftul. Micul dejun este disponibil între 07:30 și 10:30.",
+    breakfastText:
+    "Sala noastră de mic dejun se află la etajul -1. Se poate ajunge cu liftul. Micul dejun este disponibil între 07:30 și 10:30.",
 
-checkoutTitle:
-"🧳 Ora Check-out",
+    checkoutTitle:
+    "🧳 Ora Check-out",
 
-checkoutLabel:
-"Check-out",
+    checkoutLabel:
+    "Check-out",
 
-housekeepingTitle:
-"🧹 Curățenia Camerei",
+    housekeepingTitle:
+    "🧹 Curățenia Camerei",
 
-housekeepingText:
-"Pentru confortul dumneavoastră, vă rugăm să folosiți butoanele „Do Not Disturb (DND)” și „Room Cleaning” de lângă suportul cardului de acces. Curățenia camerelor este disponibilă între 11:00 și 17:00.",
+    housekeepingText:
+    "Pentru confortul dumneavoastră, vă rugăm să folosiți butoanele „Do Not Disturb (DND)” și „Room Cleaning” de lângă suportul cardului de acces.<br><br>Curățenia camerelor este disponibilă între 11:00 și 17:00.",
 
-foodTitle:
-"🍽️ Livrare de Mâncare",
+    safeBoxTitle:
+    "🔐 Seif",
 
-foodText:
-"Aplicații populare:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+    safeBoxText:
+    "Puteți folosi seiful din camera dumneavoastră pentru a păstra obiectele de valoare în siguranță.<br><br>Puteți crea propriul <span class='safe-highlight'>cod personal de 4 cifre</span> pentru seif.",
 
-footer:
-"Vă dorim un sejur plăcut."
+    foodTitle:
+    "🍽️ Livrare de Mâncare",
+
+    foodText:
+    "Aplicații populare:<br><strong>Yemek Sepeti / Getir Yemek</strong>",
+
+    footer:
+    "Vă dorim un sejur plăcut."
 
 }
 
 };
 
 
-/* =========================
-   DİL DEĞİŞTİR
-========================= */
+/* =========================================================
+   DİL DEĞİŞTİRME
+========================================================= */
 
 function setLang(lang) {
 
-    const t = translations[lang];
+    const translation =
+        translations[lang];
 
-    for (let id in t) {
+    if (!translation) {
+        return;
+    }
+
+
+    /* -----------------------------------------------------
+       TÜM ÇEVİRİLEBİLİR ALANLARI DEĞİŞTİR
+    ----------------------------------------------------- */
+
+    Object.keys(translation).forEach(function(id) {
 
         const element =
             document.getElementById(id);
 
-        if (!element) continue;
-
-
-        /*
-         * Yemek kısmında <br> ve <strong>
-         * bulunduğu için innerHTML kullanıyoruz.
-         */
-
-        if (
-            id === "foodText"
-        ) {
-
-            element.innerHTML =
-                t[id];
-
-        } else {
-
-            element.innerText =
-                t[id];
-
+        if (!element) {
+            return;
         }
 
-    }
+        element.innerHTML =
+            translation[id];
+
+    });
 
 
-    /* ARAPÇA RTL */
+    /* -----------------------------------------------------
+       ARAPÇA RTL
+    ----------------------------------------------------- */
 
     if (lang === "ar") {
 
@@ -1559,13 +1745,13 @@ function setLang(lang) {
     }
 
 
-    /* AKTİF BUTON */
+    /* -----------------------------------------------------
+       AKTİF DİL BUTONU
+    ----------------------------------------------------- */
 
     document
-        .querySelectorAll(
-            ".language-btn"
-        )
-        .forEach(button => {
+        .querySelectorAll(".language-btn")
+        .forEach(function(button) {
 
             button.classList.remove(
                 "active"
@@ -1574,17 +1760,28 @@ function setLang(lang) {
         });
 
 
-    document
-        .getElementById(lang)
-        .classList.add("active");
+    const activeButton =
+        document.getElementById(lang);
+
+    if (activeButton) {
+
+        activeButton.classList.add(
+            "active"
+        );
+
+    }
+
 }
 
 
-/* BAŞLANGIÇ */
+/* =========================================================
+   SAYFA AÇILIŞI
+========================================================= */
 
 setLang("tr");
 
 </script>
 
 </body>
+
 </html>
